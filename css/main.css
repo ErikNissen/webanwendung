@@ -1,142 +1,188 @@
 .grid-container {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 20% 70% 10%;
-  gap: 10px 0px;
-  grid-template-areas:
-    "logo title"
-    "nav section"
-    "footer footer";
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 70% 10%;
+    gap: 10px 0px;
+    grid-template-areas: "logo title" "nav section" "footer footer";
 }
-body {	
-background: #FCF2E0;
+
+body {
+    background: #FCF2E0;
 }
+
 .footer {
-	background: #E0E0C8;
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 25% 75%;
-	gap: 50% 0px;
-	grid-template-areas: 
-		"Contact"
-		"ext";
-	grid-area: footer;
+    background: #E0E0C8;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 75%;
+    gap: 50% 0px;
+    grid-template-areas: "Contact" "ext";
+    grid-area: footer;
 }
-.Contact { grid-area: Contact; }
-.text { grid-area: ext;
-		background: #E0E0C8; }
+
+.Contact {
+    grid-area: Contact;
+}
+
+.text {
+    grid-area: ext;
+    background: #E0E0C8;
+}
+
 .nav {
-	background: #F5FCE0;
-  	display: grid;
-  	grid-template-columns: 80% 20%;
-  	grid-template-rows: repeat(4, 5%);
-  	gap: 0px 0px;
-  	grid-template-areas:
-    	"home hI"
-    	"about aI"
-    	"soz sI"
-    	"imp iI";
-  	grid-area: nav;
+    background: #F5FCE0;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: repeat(4, 5%);
+    gap: 0px 0px;
+    grid-template-areas: "home hI" "about aI" "soz sI" "log lI" "imp iI";
+    grid-area: nav;
 }
-.home{	
-		grid-area: home;
-		width:64px;
-		height:64px;
+
+.home {
+    grid-area: home;
+    width: 64px;
+    height: 64px;
 }
-.hover:hover{
-	background: #A7B08B;
+
+.hover:hover {
+    background: #A7B08B;
 }
-.hI{
-	grid-area: hI;
-	width:20px;
-	height:20px;
+
+.hI {
+    grid-area: hI;
+    width: 20px;
+    height: 20px;
 }
-.about{grid-area: about;}
-.aI{
-	grid-area: aI;
-	width:20px;
-	height:20px;
+
+.about {
+    grid-area: about;
 }
-.soz{grid-area: soz;}
-.sI{
-	grid-area: sI;
-	width:20px;
-	height:20px;
+
+.aI {
+    grid-area: aI;
+    width: 20px;
+    height: 20px;
 }
-.imp{grid-area: imp;}
-.iI{
-	grid-area: iI;
-	width:20px;
-	height:20px;
+
+.soz {
+    grid-area: soz;
 }
-.logo { 
-	background: #f7f5e8;
-	grid-area: logo; 
-	width:100%;
+
+.sI {
+    grid-area: sI;
+    width: 20px;
+    height: 20px;
 }
+
+.log {
+    grid-area: log;
+}
+
+.lI {
+    grid-area: lI;
+    width: 20px;
+    height: 20px;
+}
+
+.imp {
+    grid-area: imp;
+}
+
+.iI {
+    grid-area: iI;
+    width: 20px;
+    height: 20px;
+}
+
+.logo {
+    background: #f7f5e8;
+    grid-area: logo;
+    width: 100%;
+}
+
 .title {
-	background: #f7f5e8;
-  	display: grid;
-  	grid-template-columns: 100%;
-  	grid-template-rows: 30% 70%;
-  	gap: 0px 0px;
- 	grid-template-areas:
- 		"Title"
- 		"Subtitle";
- 	grid-area: title;
+    background: #f7f5e8;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+    gap: 0px 0px;
+    grid-template-areas: "Title" "Subtitle";
+    grid-area: title;
 }
-.Subtitle { grid-area: Subtitle; }
-.Title { grid-area: Title; }
+
+.Subtitle {
+    grid-area: Subtitle;
+}
+
+.Title {
+    grid-area: Title;
+}
+
 .section {
-	background: #E0E0C8;
-  	display: grid;
-  	grid-template-columns: 80% 20%;
-  	grid-template-rows: repeat(3, 33.33%);
-  	gap: 0px 0px;
-  	grid-template-areas:
-		"t1 p1"
-    	"t2 p2"
-    	"t3 p3";
-  	grid-area: section;
+    background: #E0E0C8;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: repeat(3, 33.33%);
+    gap: 0px 0px;
+    grid-template-areas: "t1 p1" "t2 p2" "t3 p3";
+    grid-area: section;
 }
-.t1{grid-area: t1;}
-.t2{grid-area: t2;}
-.t3{grid-area: t3;}
-.t4{grid-area: t4;}
-.p1{
-	grid-area: p1;
-	width:100%;
-	margin-top: auto;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: auto;
+
+.t1 {
+    grid-area: t1;
 }
-.p2{
-	grid-area: p2;
-	width:100%;
-	margin-top: auto;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: auto;
+
+.t2 {
+    grid-area: t2;
 }
-.p3{
-	grid-area: p3;
-	width:100%;
-	margin-top: auto;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: auto;
+
+.t3 {
+    grid-area: t3;
 }
-.p4{
-	grid-area: p4;
-	width:100%;
-	margin-top: auto;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: auto;
+
+.t4 {
+    grid-area: t4;
 }
-.gif{
-	width:100%;
-	position: absolute;
-	top: 700%;
+
+.p1 {
+    grid-area: p1;
+    width: 100%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.p2 {
+    grid-area: p2;
+    width: 100%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.p3 {
+    grid-area: p3;
+    width: 100%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.p4 {
+    grid-area: p4;
+    width: 100%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.gif {
+    width: 100%;
+    position: absolute;
+    top: 700%;
 }

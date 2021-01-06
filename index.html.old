@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<!--Meta Tags-->
+		<meta charset="UTF-8">
+		<meta name="author" content="Erik Nissen">
+		<meta name="description" content="The best HTML5 webside of the world.">
+		<meta name="version" content="1.0">
+		<!--Include external Files-->
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo.svg">
+		<script type="text/javascript" src="script/js/main.js"></script>
+	</head>
+	<body>
+		<section class="grid-container">
+  			<nav class="nav">
+  				<a class="hover" href="#home">Home</a>
+				<img class="hI" src="img/home.svg">
+				<a class="hover" href="#about">&Uuml;ber uns</a>
+				<img class="aI" src="img/about.svg">
+				<a class="hover" href="#proj">Sozialwirtschaftliche Projekte</a>
+				<img class="sI" src="img/soz.svg">
+				<a class="hover" href="http://localhost/cgi-bin/cgi.cgi">Mitarbeiterportal</a>
+				<img class="lI" src="img/login.svg">
+				<a class="hover" href="#impressum">Impressum</a>
+				<!--<img class="iI" src="img/imp.svg">-->
+			</nav>
+			<img class="logo" src="img/logo.svg">
+  			<header class="title">
+				<h1 class="Title">Zentrale finanzielle Unterst&uuml;tzung<br> f&uuml;r den sozialen und privaten Sektor</h1>
+				<p class="Subtitle">Wir arbeiten in einem bedeutsamen Wirtschaftssektor.</p>
+			</header>
+			<section class="section">
+				<img class="p1" src="https://randomwordgenerator.com/img/picture-generator/52e9dd444d56ac14f1dc8460962e33791c3ad6e04e5074417c2f73d49f4dc4_640.jpg" alt="">
+				<img class="p2" src="https://randomwordgenerator.com/img/picture-generator/55e7d04a4e5aac14f1dc8460962e33791c3ad6e04e5074417c2d78dc964cc6_640.jpg" alt="">
+				<img class="p3" src="https://randomwordgenerator.com/img/picture-generator/5fe7d1424a51b10ff3d8992cc12c30771037dbf85254784a73287bd49148_640.jpg" alt="">
+				<article class="t1" id="home" >
+					<h3>Die europ&auml;ischen Sprachen geh&ouml;ren zur selben Familie. F&uuml;r Wissenschaft, Musik, Sport usw. verwendet Europa das gleiche Vokabular.</h3>
+					<p>Die europ&auml;ischen Sprachen geh&ouml;ren zur selben Familie. Ihre getrennte Existenz ist ein Mythos. F&uuml;r Wissenschaft, Musik, Sport usw. verwendet Europa das gleiche Vokabular.<br>
+					Sprachen unterscheiden sich nur in Grammatik, Aussprache und allgemeineren W&ouml;rtern. Omnicos direkt auf die W&uuml;nschbarkeit einer neuen Verkehrssprache: Wo sie sich weigert,<br>
+					weiterhin teure &Uuml;bersetzer zu bezahlen.</p><br><br>
+					<h3>Die neue Verkehrssprache wird einfacher und regelm&auml;&szlig;iger sein als die bestehenden europ&auml;ischen Sprachen.</h3>
+					<p>Bei solmen va esser ist eine weitaus einheitliche Grammatik, Aussprache und plu sommun paroles erforderlich. Wenn jedoch Sprachen verschmelzen, ist die Grammatik der<br>
+					resultierenden Sprachen einfacher und regelm&auml;&szlig;iger als die der verschmelzenden Sprachen. Die neue Verkehrssprache wird einfacher und regelm&auml;&szlig;iger sein als die bestehenden<br>
+					europ&auml;ischen Sprachen.</p><br><br>
+					<h3>Es war so einfach wie westlich, es war westlich.</h3>
+					<p>Es war so einfach wie westlich, es war westlich. F&uuml;r einen Engl&auml;nder schien es ein vereinfachter Engl&auml;nder zu sein, sagte mir ein skeptischer Cambridge-Freund, dass Westerner<br>
+					ist. Die europ&auml;ischen Sprachen geh&ouml;ren zur selben Familie. Ihre getrennte Existenz ist ein Mythos. F&uuml;r Wissenschaft, Musik, Sport usw. verwendet Europa das gleiche Vokabular.</p><br><br>
+					<h3>Wenn also die Sprache kombiniert wird, ist die erstellte Logik einfacher und umfasst mehr als die Logik selbst.</h3>
+					<p>Wenn jedoch Sprachen verschmelzen, ist die Grammatik der resultierenden Sprachen einfacher und regelm&auml;&szlig;iger als die der verschmelzenden Sprachen.<br>
+					Die neue Verkehrssprache wird einfacher und regelm&auml;&szlig;iger sein als die bestehenden europ&auml;ischen Sprachen. Es war so einfach wie westlich, es war westlich.<br>
+					F&uuml;r einen Engl&auml;nder schien es ein vereinfachter Engl&auml;nder zu sein, sagte mir ein skeptischer Cambridge-Freund, dass Westerner ist. Die europ&auml;ischen Sprachen<br>
+					geh&ouml;ren zur selben Familie. Ihre getrennte Existenz ist ein Mythos. F&uuml;r Wissenschaft, Musik, Sport usw. verwendet Europa das gleiche Vokabular.<br>
+					Sprachen unterscheiden sich nur in Grammatik, Aussprache</p>
+				</article>
+				<article class="t2">
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<h2 id="about">&Uuml;ber uns</h2>
+					<h3>Willkommen auf unserer Homepage.</h3><br><br>
+					Ihre erste Anlaufstelle f&uuml;r Dienstleistungen zivilrechtlicher Wirtschaftstypen. Wir sind darauf ausgerichtet, Ihnen das Optimum f&uuml;r Ihre spezielle Notsituation zu offerieren,<br>
+					mit dem Fokus auf Sicherheit, Professionalit&auml;t, Professionalit&auml;t und Spezialit&auml;t des Unternehmens.<br><br>
+					Wir arbeiten daran, unsere passionierte Arbeitshaltung f&uuml;r Ihre wirtschaftliche Ausnahmestellung in eine wirtschaftliche Depression zu konvergieren. Wir hoffen, dass Sie unsere<br>
+					Dienstleistungen so sehr nutzen, wie wir sie Ihnen bereitstellen.<br><br>
+					Mit aufrichtigem Gru&szlig;,<br>
+					Dr. med. h.c. c. f. apl. d. ale. Claus Meyer<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</article>
+				<article class="t3" id="proj">
+					<h2>Sozialwirtschaftliche Projekte</h2>
+					<h3>&Uuml;berall dieselbe alte Leier.</h3>
+					<p>&Uuml;berall dieselbe alte Leier. Das Layout ist fertig, der Text l&auml;sst auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.<br>
+					Genau zu diesem Zwecke erschaffen, immer im Schatten meines gro&szlig;en Bruders &raquo;Lorem Ipsum&laquo;, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden.</p>
+					<h3>Diese Standards sorgen daf&uuml;r, dass alle Beteiligten aus einer Webseite den gr&ouml;&szlig;ten Nutzen ziehen.</h3>
+					<p>So gibt es Regeln f&uuml;r HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler geh&ouml;rt haben. Diese Standards sorgen daf&uuml;r, dass alle Beteiligten aus einer<br>
+					Webseite den gr&ouml;&szlig;ten Nutzen ziehen. Im Gegensatz zu fr&uuml;heren Webseiten m&uuml;ssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten f&uuml;r den Internet Explorer und einen anderen Browser programmieren.</p>
+					<h3>Was f&uuml;r eine Erleichterung.</h3>
+					<p>Es reicht eine Seite, die - richtig angelegt - sowohl auf verschiedenen Browsern im Netz funktioniert, aber ebenso gut f&uuml;r den Ausdruck oder die Darstellung auf einem Handy geeignet ist.<br>
+					Wohlgemerkt: Eine Seite f&uuml;r alle Formate. Was f&uuml;r eine Erleichterung. Standards sparen Zeit bei den Entwicklungskosten und sorgen daf&uuml;r, dass sich Webseiten sp&auml;ter leichter pflegen lassen.<br>
+					Nat&uuml;rlich nur dann, wenn sich alle an diese Standards halten.</p>
+					<h3>Meine Mission ist erf&uuml;llt. Das Layout ist fertig, der Text l&auml;sst auf sich warten.</h3>
+					<p>Das gilt f&uuml;r Browser wie Firefox, Opera, Safari und den Internet Explorer ebenso wie f&uuml;r die Darstellung in Handys. Und was k&ouml;nnen Sie f&uuml;r Standards tun? Fordern Sie von Ihren Designern und Programmieren<br>
+					einfach standardkonforme Webseiten. Ihr Budget wird es Ihnen auf Dauer danken. Ebenso m&ouml;chte ich Ihnen daf&uuml;r danken, dass Sie mich bis zum Ende gelesen haben. Meine Mission ist erf&uuml;llt.<br>
+					Ich werde hier noch die Stellung halten, bis der geplante Text eintrifft. Ich w&uuml;nsche Ihnen noch einen sch&ouml;nen Tag. Und arbeiten Sie nicht zuviel! &Uuml;berall dieselbe alte Leier. Das Layout ist fertig,<br>
+					der Text l&auml;sst auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines<br>
+					gro&szlig;en Bruders &raquo;Lorem Ipsum&laquo;, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden.</p><br><br>
+				</article>
+			</section>
+			<section class="footer">
+				<article class="Contact" id="imp">
+					<h2>Impressum</h2>
+					Angaben gem&auml;&szlig; &sect; 5 TMG<br>Claus Meyer<br>Buchholzenweg 23<br> 
+					45349 Klein Belten <br><br><strong>Vertreten durch:</strong><br>
+					Claus Meyer<br>
+					Christian Ide<br>
+					Deborah Jordan<br>
+					Samuel Gates<br><br>
+					Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;27a Umsatzsteuergesetz: DE181199844<br><br><strong>Aufsichtsbeh&ouml;rde:</strong><br>
+					Zentr. fin. Unt. soz. priv. Sekt.<br><strong>Berufsbezeichnung:</strong><br> 
+					Wirtschaftspr&uuml;fer<br>
+					Zust&auml;ndige Kammer: Wirtschaftspr&uuml;ferkammer<br>
+					Verliehen durch: Bundesrepublik Deutschland<br>
+				</article>
+				<article class="text">
+					<h2><strong>Haftungsausschluss:</strong></h2><br><strong>Haftung f&uuml;r Inhalte</strong><br><br>
+					Die Inhalte unserer Seiten wurden mit gr&ouml;&szlig;ter Sorgfalt erstellt. F&uuml;r die Richtigkeit, Vollst&auml;ndigkeit und Aktualit&auml;t der Inhalte k&ouml;nnen wir jedoch keine Gew&auml;hr &uuml;bernehmen. Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect; 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&uuml;hrt. Eine diesbez&uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung m&ouml;glich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br><br><strong>Urheberrecht</strong><br><br>
+					Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.<br><br><strong>Datenschutz</strong><br><br>
+					Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten m&ouml;glich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit m&ouml;glich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdr&uuml;ckliche Zustimmung nicht an Dritte weitergegeben. <br>
+					Wir weisen darauf hin, dass die Daten&uuml;bertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitsl&uuml;cken aufweisen kann. Ein l&uuml;ckenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht m&ouml;glich. <br>
+					Der Nutzung von im Rahmen der Impressumspflicht ver&ouml;ffentlichten Kontaktdaten durch Dritte zur &Uuml;bersendung von nicht ausdr&uuml;cklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdr&uuml;cklich widersprochen. Die Betreiber der Seiten behalten sich ausdr&uuml;cklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
+					<br> 
+				</article>
+			</section>
+		</section>
+		<section id="bsod">
+		<img class="gif" src="https://media0.giphy.com/media/3o7TKurR1akApmYENy/giphy.gif?cid=ecf05e47mjvu1oa59ar1yhfgwoz287xyyjxctvpeqgwu0rfu&rid=giphy.gif">
+		</section>
+	</body>
+</html>
