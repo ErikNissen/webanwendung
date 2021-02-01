@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ZfUspS Login</title>
+        <title>ZfUspS Sparabo</title>
         <meta charset="UTF-8">
 		<meta name="author" content="Erik Nissen & Jan Knipping">
-		<meta name="description" content="The best HTML5 webside of the world.">
+		<meta name="description" content="Bestes Sparabo der Welt">
 		<meta name="version" content="1.0">
 		<!--Include external Files-->
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="shortcut icon" type="image/x-icon" href="img/logo.svg">
     </head>
     <body>
-        <h2 class="Title">Mitarbeiterportal</h2>
-        <form action="/cgi.cgi">
-            <label for="email">Ihre E-Mailadresse</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="pword">Ihr Passwort:</label><br>
-            <input type="text" id="pword" name="pword"><br><br>
-            <input type="submit" value="Login">
+        <h2 class="Title"><img src="img/Jamba.gif" width="8%">Sparabo</h2>
+        <!--Formular POST Methode-->
+        <form action="cgi-bin/cgi.cgi" method="POST">
+            <label for="name">Ihr Name:</label><br>
+            <input type="text" id="Name" name="AnwenderName" required><br>
+            <label for="Addr">Ihre Adresse:</label><br>
+            Straße & Nr <input type="text" id="str" name="Str" required><br>
+            PLZ & Stadt <input type="text" id="plz" name="PLZ" required><br><br><br>
+            <input type="image" src="https://www.gifs.de/uploads/gifs/buttons/Buttons_00002404.gif" width="7%" alt="Kostenlos bestellen">
         </form>
-        <p class="Subtitle">Ändern Sie bitte alle 60 Tage Ihr Passwort.</p>
         </body>
 </html>

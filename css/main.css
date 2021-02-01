@@ -114,6 +114,13 @@ body {
 .Subtitle {
     grid-area: Subtitle;
 }
+#vid {
+	position: relative;
+	top: 50px;
+	left: 25%;
+    width: 750px;
+    z-index: 2;
+}
 
 .Title {
     grid-area: Title;
