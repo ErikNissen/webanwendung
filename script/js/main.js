@@ -12,8 +12,8 @@ function checkCookies() {
     document.getElementById("cookies").innerHTML = text;
 }
 
-var elem = document.getElementById('browser');
-elem.addEventListener('click', browserCheck);
+//var elem = document.getElementById("browser");
+//elem.addEventListener('click', browserCheck);
 
 function browserCheck() {
     var BrowserName = navigator.appName;
@@ -30,10 +30,9 @@ function loadDoc() {
     jsn.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200){
             let jsonresp = JSON.parse(this.responseText);
-            document.getElementById("iban").innerHTML = jsonresp.IBAN[0];
-            document,getElementById("nr").innerHTML = jsonresp.id;
+            document.getElementById("iban").innerHTML = jsonresp.IBAN[Math.floor((Math.random() * 6))];
         }
     };
-    jsn.open("GET", "ajax.json", true);
+    jsn.open("GET", "http://localhost/script/js/ajax.json", true);
     jsn.send();
 }
