@@ -31,6 +31,9 @@ function loadDoc() {
         if (this.readyState == 4 && this.status == 200){
             let jsonresp = JSON.parse(this.responseText);
             document.getElementById("iban").innerHTML = jsonresp.IBAN[Math.floor((Math.random() * 6))];
+            console.log("Function loadDoc(): Done");
+        }else{
+            console.log("Function loadDoc(): Error.");
         }
     };
     jsn.open("GET", "http://localhost/script/js/ajax.json", true);
