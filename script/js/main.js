@@ -78,3 +78,4 @@ function loadDoc() {
 function resetForm(id) {
     document.getElementById(id).reset();
 }
+
