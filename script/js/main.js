@@ -24,7 +24,8 @@ function loadDoc() {
     jsn.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200){
             let jsonresp = JSON.parse(this.responseText);
-            document.getElementById("rechnung").innerHTML = this.responseText;
+            document.getElementById("iban").innerHTML = jsonresp.IBAN[0];
+            document,getElementById("nr").innerHTML = jsonresp.id;
         }
     };
     jsn.open("GET", "ajax.json", true);
