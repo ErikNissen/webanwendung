@@ -18,20 +18,20 @@ elem.addEventListener('click', browserCheck);
 function browserCheck() {
     var BrowserName = navigator.appName;
     var BrowserVersion = navigator.appVersion;
-    text = 'Sie verwendest den <span>' + BrowserName +
+    text2 = 'Sie verwendest den <span>' + BrowserName +
         '<\/span>, in der Version <span>' + BrowserVersion + '<\/span>';
-    var ausgabe = document.getElementById('browserID');
-    ausgabe.innerHTML = text;
+    var browserID = document.getElementById('browserID');
+    browserID.innerHTML = text2;
 }
 
 //AJAX
 function loadDoc() {
     let jsn = new XMLHttpRequest();
     jsn.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200){
+        if (this.readyState == 4 && this.status == 200) {
             let jsonresp = JSON.parse(this.responseText);
             document.getElementById("iban").innerHTML = jsonresp.IBAN[0];
-            document,getElementById("nr").innerHTML = jsonresp.id;
+            document, getElementById("nr").innerHTML = jsonresp.id;
         }
     };
     jsn.open("GET", "ajax.json", true);
