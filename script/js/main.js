@@ -35,17 +35,15 @@ function loadDoc() {
     jsn.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             let jsonresp = JSON.parse(this.responseText);
-<<<<<<< HEAD
             document.getElementById("iban").innerHTML = jsonresp.IBAN[Math.floor((Math.random() * 6))];
             console.log("Function loadDoc(): Done");
-        }else{
-            console.log("Function loadDoc(): Error.");
-=======
-            document.getElementById("iban").innerHTML = jsonresp.IBAN[0];
-            document, getElementById("nr").innerHTML = jsonresp.id;
->>>>>>> b8ba91f4bc8414101c27d487da54eaad1a872028
         }
     };
     jsn.open("GET", "http://localhost/script/js/ajax.json", true);
     jsn.send();
+}
+
+//Formular leeren
+function resetForm(id) {
+    document.getElementById(id).reset();
 }
