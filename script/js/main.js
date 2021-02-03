@@ -1,4 +1,3 @@
-< script >
     function agreeCookies() {
         alert("Come to the darkside we have cookies!");
     }
