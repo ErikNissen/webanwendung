@@ -16,6 +16,7 @@ function Jump() {
     var elmnt = document.getElementById("jump");
     elmnt.scrollIntoView();
     alert("Page is loaded");
+<<<<<<< HEAD
 }
 
 //AJAX
@@ -27,3 +28,7 @@ function loadDoc() {
         }
     }
 }
+=======
+} <
+/script>
+>>>>>>> 91215d758b8041dfedaedf3739285836b1364648
