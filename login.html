@@ -2,24 +2,32 @@
 <html>
     <head>
         <title>ZfUspS Sparabo</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta charset="UTF-8">
 		<meta name="author" content="Erik Nissen & Jan Knipping">
 		<meta name="description" content="Bestes Sparabo der Welt">
 		<meta name="version" content="1.0">
 		<!--Include external Files-->
-		<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="script/js/main.js"></script>
 		<link rel="shortcut icon" type="image/x-icon" href="img/logo.svg">
     </head>
     <body>
         <h2 class="Title"><img src="img/Jamba.gif" width="8%">Sparabo</h2>
         <!--Formular POST Methode-->
-        <form action="../cgi-bin/cgi.cgi" method="POST">
+        <form action="cgi-bin/cgi.cgi" method="POST" id="abo">
             <label for="name">Ihr Name:</label><br>
             <input type="text" id="Name" name="AnwenderName" required><br>
             <label for="Addr">Ihre Adresse:</label><br>
             Straße & Nr <input type="text" id="str" name="Str" required><br>
             PLZ & Stadt <input type="text" id="plz" name="PLZ" required><br><br><br>
             <input type="image" src="https://www.gifs.de/uploads/gifs/buttons/Buttons_00002404.gif" width="7%" alt="Kostenlos bestellen">
+            <input type="button" onclick="resetForm('abo')" value="Formular leeren">
         </form>
+        <script>
+            $("button").click(function(){
+                
+            })
+        </script>
         </body>
 </html>

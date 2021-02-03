@@ -7,9 +7,9 @@
 
     Erik:
     5-7
-    5) AJAX
-    6) AJAX JS dyn DIV
-    7) JS r Form
+    5) AJAX                 DONE
+    6) AJAX JS dyn DIV      DONE
+    7) JS r Form            
 -->
 
 <!DOCTYPE html>
@@ -29,9 +29,9 @@
 </head>
 
 <body onload="agreeCookies(), checkCookies(), browserCheck()">
-    <h3 id="chookies"></h3>
+    <h3 id="cookies"></h3>
     <h2>Hier erfahren Sie Ihre Boweserversion</h2>
-    <button type="button" id="button">Get it!</button>
+    <button type="button" id="browser" onclick="browserCheck()">Get it!</button>
     <p id="browserID"></p>
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
         Your browser does not support the canvas element.

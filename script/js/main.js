@@ -12,8 +12,13 @@ function checkCookies() {
     document.getElementById("cookies").innerHTML = text;
 }
 
+<<<<<<< HEAD
 var elem = document.getElementById("button");
 elem.addEventListener("click", browserCheck);
+=======
+//var elem = document.getElementById("browser");
+//elem.addEventListener('click', browserCheck);
+>>>>>>> 064d242507f72842c2ee76af9ba8bfd14c1d1027
 
 function browserCheck() {
     var BrowserName = navigator.appName;
@@ -35,10 +40,15 @@ function loadDoc() {
     jsn.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             let jsonresp = JSON.parse(this.responseText);
-            document.getElementById("iban").innerHTML = jsonresp.IBAN[0];
-            document, getElementById("nr").innerHTML = jsonresp.id;
+            document.getElementById("iban").innerHTML = jsonresp.IBAN[Math.floor((Math.random() * 6))];
+            console.log("Function loadDoc(): Done");
         }
     };
-    jsn.open("GET", "ajax.json", true);
+    jsn.open("GET", "http://localhost/script/js/ajax.json", true);
     jsn.send();
+}
+
+//Formular leeren
+function resetForm(id) {
+    document.getElementById(id).reset();
 }
