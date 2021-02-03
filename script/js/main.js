@@ -29,9 +29,11 @@ function loadDoc() {
     let jsn = new XMLHttpRequest();
     jsn.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("rechnung").innerHTML = this.responseText;
-        }
-    };
-    jsn.open("GET", "ajax.json", true);
-    jsn.send();
-}
+            if (this.readyState == 4 && this.status == 200) {
+                let jsonresp = JSON.parse(this.responseText);
+                document.getElementById("rechnung").innerHTML = this.responseText;
+            }
+        };
+        jsn.open("GET", "ajax.json", true);
+        jsn.send();
+    }
