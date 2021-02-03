@@ -24,6 +24,11 @@ function browserCheck() {
     browserID.innerHTML = text2;
 }
 
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF6051";
+ctx.fillRect(5, 5, 190, 90);
+
 //AJAX
 function loadDoc() {
     let jsn = new XMLHttpRequest();
