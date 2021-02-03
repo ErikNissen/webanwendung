@@ -28,7 +28,7 @@
     <script type="text/javascript" src="script/js/main.js"></script>
 </head>
 
-<body onload="agreeCookies(), checkCookies(), browserCheck()">
+<body onload="agreeCookies(), checkCookies(), init()">
     <h3 id="cookies"></h3>
     <div id="browser">Hier erfahren Sie Ihre Boweserversion</div>
     <button type="button" id="browser" onclick="browserCheck()">Get it!</button>
@@ -36,6 +36,9 @@
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
         Your browser does not support the canvas element.
         </canvas>
+    <h2>Eine Seite, die etwas über Sie weiß...</h2>
+    <p>Dies ist Ihr <span id="info">1</span>. Besuch auf dieser Seite!</p>
+    <p>Benutzen Sie doch mal die Reload-Funktion Ihres Browsers ...</p>
     <!--Navigationsbar-->
     <section class="grid-container">
         <nav class="nav">
