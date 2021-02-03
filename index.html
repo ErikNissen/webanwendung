@@ -28,7 +28,11 @@
     <script type="text/javascript" src="script/js/main.js"></script>
 </head>
 
-<body onload="agreeCookies(), checkCookies()">
+<body onload="agreeCookies(), checkCookies(), browserCheck()">
+    <h3 id="chookies"></h3>
+    <h2>Hier erfahren Sie Ihre Boweserversion</h2>
+    <button type="button" id="browser">Get it!</button>
+    <p id="browserID"></p>
     <!--Navigationsbar-->
     <section class="grid-container">
         <nav class="nav">
@@ -128,10 +132,6 @@
                 ver&ouml;ffentlichten Kontaktdaten durch Dritte zur &Uuml;bersendung von nicht ausdr&uuml;cklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdr&uuml;cklich widersprochen. Die Betreiber der Seiten behalten sich ausdr&uuml;cklich
                 rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
                 <br>
-                <h3 id="chookies"></h3>
-                <h2>Hier erfahren Sie Ihre Boweserversion</h2>
-                <button type="button" id="browser">Los</button>
-                <p id="browserID"></p>
             </article>
         </section>
     </section>

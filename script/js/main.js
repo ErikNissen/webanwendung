@@ -18,8 +18,8 @@ elem.addEventListener('click', browserCheck);
 function browserCheck() {
     var BrowserName = navigator.appName;
     var BrowserVersion = navigator.appVersion;
-    text = 'Ah ja, Sie verwenden also den <span>' + BrowserName +
-        '<\/span>, und zwar in der Version <span>' + BrowserVersion + '<\/span>';
+    text = 'Sie verwendest den <span>' + BrowserName +
+        '<\/span>, in der Version <span>' + BrowserVersion + '<\/span>';
     var ausgabe = document.getElementById('browserID');
     ausgabe.innerHTML = text;
 }
