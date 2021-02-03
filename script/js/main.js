@@ -17,3 +17,13 @@ function Jump() {
     elmnt.scrollIntoView();
     alert("Page is loaded");
 }
+
+//AJAX
+function loadDoc() {
+    let jsn = new XMLHttpRequest();
+    jsn.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200){
+            document.getElementById("")
+        }
+    }
+}
