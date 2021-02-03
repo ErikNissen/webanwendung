@@ -31,9 +31,11 @@
 <body onload="agreeCookies(), checkCookies(), browserCheck()">
     <h3 id="chookies"></h3>
     <h2>Hier erfahren Sie Ihre Boweserversion</h2>
-    <button type="button" id="browser">Get it!</button>
+    <button type="button" id="button">Get it!</button>
     <p id="browserID"></p>
-
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+        Your browser does not support the canvas element.
+        </canvas>
     <!--Navigationsbar-->
     <section class="grid-container">
         <nav class="nav">
@@ -136,9 +138,6 @@
             </article>
         </section>
     </section>
-    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
-Your browser does not support the canvas element.
-</canvas>
     <section id="bsod">
         <img class="gif" src="https://media0.giphy.com/media/3o7TKurR1akApmYENy/giphy.gif?cid=ecf05e47mjvu1oa59ar1yhfgwoz287xyyjxctvpeqgwu0rfu&rid=giphy.gif">
     </section>

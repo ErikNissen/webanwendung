@@ -12,15 +12,15 @@ function checkCookies() {
     document.getElementById("cookies").innerHTML = text;
 }
 
-var elem = document.getElementById('browser');
-elem.addEventListener('click', browserCheck);
+var elem = document.getElementById("button");
+elem.addEventListener("click", browserCheck);
 
 function browserCheck() {
     var BrowserName = navigator.appName;
     var BrowserVersion = navigator.appVersion;
-    text2 = 'Sie verwendest den <span>' + BrowserName +
-        '<\/span>, in der Version <span>' + BrowserVersion + '<\/span>';
-    var browserID = document.getElementById('browserID');
+    text2 = "Sie verwendest den <span>" + BrowserName +
+        "<\/span>, in der Version <span>" + BrowserVersion + "<\/span>";
+    var browserID = document.getElementById("browserID");
     browserID.innerHTML = text2;
 }
 
