@@ -1,5 +1,5 @@
 function agreeCookies() {
-        alert("Come to the darkside we have cookies!");
+    alert("Come to the darkside we have cookies!");
 }
 
 function checkCookies() {
@@ -12,17 +12,23 @@ function checkCookies() {
     document.getElementById("cookies").innerHTML = text;
 }
 
-function Jump() {
-    var elmnt = document.getElementById("jump");
-    elmnt.scrollIntoView();
-    alert("Page is loaded");
+var elem = document.getElementById('browser');
+elem.addEventListener('click', browserCheck);
+
+function browserCheck() {
+    var BrowserName = navigator.appName;
+    var BrowserVersion = navigator.appVersion;
+    text = 'Ah ja, Sie verwenden also den <span>' + BrowserName +
+        '<\/span>, und zwar in der Version <span>' + BrowserVersion + '<\/span>';
+    var ausgabe = document.getElementById('browserID');
+    ausgabe.innerHTML = text;
 }
 
 //AJAX
 function loadDoc() {
     let jsn = new XMLHttpRequest();
     jsn.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200){
+        if (this.readyState == 4 && this.status == 200) {
             document.getElementById("rechnung").innerHTML = this.responseText;
         }
     };
