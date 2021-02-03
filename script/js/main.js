@@ -1,6 +1,6 @@
-    function agreeCookies() {
+function agreeCookies() {
         alert("Come to the darkside we have cookies!");
-    }
+}
 
 function checkCookies() {
     var text = "darkside";
