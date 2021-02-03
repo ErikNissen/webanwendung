@@ -12,13 +12,8 @@ function checkCookies() {
     document.getElementById("cookies").innerHTML = text;
 }
 
-<<<<<<< HEAD
-var elem = document.getElementById("button");
-elem.addEventListener("click", browserCheck);
-=======
-//var elem = document.getElementById("browser");
-//elem.addEventListener('click', browserCheck);
->>>>>>> 064d242507f72842c2ee76af9ba8bfd14c1d1027
+var elem = document.getElementById("browser");
+elem.addEventListener('onclick', browserCheck);
 
 function browserCheck() {
     var BrowserName = navigator.appName;
