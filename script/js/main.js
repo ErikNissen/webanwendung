@@ -26,7 +26,7 @@ function wertHolen() {
 function wertSetzen(Bezeichner, Wert, Verfall) {
     var jetzt = new Date();
     var Auszeit = new Date(jetzt.getTime() + Verfall);
-    document.cookie = Bezeichner + "=" + Wert + "; expires=" + Auszeit.toGMTString() +
+    document.cookie = Bezeichner + "=" + Wert + ";expires=" + Auszeit.toGMTString() +
         ";";
 }
 
