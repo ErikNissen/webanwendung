@@ -3,6 +3,12 @@ function agreeCookies() {
     alert("Come to the darkside we have cookies!");
 }
 
+<<<<<<< HEAD
+=======
+<<
+<<
+<< < HEAD
+>>>>>>> 6edb72a0ed2d837feef27a71a001f63316a8eb8c
 //Cookiezähler
 function init() {
     var besuch = zaehlerstand();
@@ -10,6 +16,16 @@ function init() {
     ausgabe.innerHTML = besuch;
 }
 
+<<<<<<< HEAD
+=======
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+>>>>>>> 6edb72a0ed2d837feef27a71a001f63316a8eb8c
 function wertHolen() {
     var Wert = "";
     if (document.cookie) {
@@ -22,6 +38,20 @@ function wertHolen() {
     }
     return Wert;
 }
+<<<<<<< HEAD
+=======
+
+function wertSetzen(Bezeichner, Wert, Verfall) {
+    var jetzt = new Date();
+    var Auszeit = new Date(jetzt.getTime() + Verfall);
+    document.cookie = Bezeichner + "=" + Wert + "; expires=" + Auszeit.toGMTString() +
+        ";";
+} ===
+===
+= >>>
+>>>
+> 8e8821 a2925049d03117a872b191c40123e38758
+>>>>>>> 6edb72a0ed2d837feef27a71a001f63316a8eb8c
 
 function wertSetzen(Bezeichner, Wert, Verfall) {
     var jetzt = new Date();
@@ -54,11 +84,39 @@ function browserCheck() {
     var browserID = document.getElementById("browserID");
     browserID.innerHTML = text2;
 }
-
+//Canvas
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-ctx.fillStyle = "#FF6051";
-ctx.fillRect(5, 5, 190, 90);
+var ballRadius = 10;
+var x = canvas.width / 2;
+var y = canvas.height - 30;
+var dx = 2;
+var dy = -2;
+
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBall();
+
+    if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+        dx = -dx;
+    }
+    if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+        dy = -dy;
+    }
+
+    x += dx;
+    y += dy;
+}
+
+setInterval(draw, 10);
 
 //AJAX
 function loadDoc() {
@@ -77,6 +135,9 @@ function loadDoc() {
 //Formular leeren
 function resetForm(id) {
     document.getElementById(id).reset();
+<<<<<<< HEAD
+}
+=======
 }
 
 //Cockies
@@ -113,3 +174,4 @@ function checkCookie(cnm) {
          return 0;
     }
   }
+>>>>>>> 73ec8bfab128b964edd917f6ffc86ce10dcf555d
