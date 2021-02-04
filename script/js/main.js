@@ -3,44 +3,7 @@ function agreeCookies() {
     alert("Come to the darkside we have cookies!");
 }
 
-//Cookiezähler
-function init() {
-    var besuch = zaehlerstand();
-    var ausgabe = document.getElementById('info');
-    ausgabe.innerHTML = besuch;
-}
 
-function wertHolen() {
-    var Wert = "";
-    if (document.cookie) {
-        var Wertstart = document.cookie.indexOf("=") + 1;
-        var Wertende = document.cookie.indexOf(";");
-        if (Wertende == -1) {
-            Wertende = document.cookie.length;
-        }
-        Wert = document.cookie.substring(Wertstart, Wertende);
-    }
-    return Wert;
-}
-
-function wertSetzen(Bezeichner, Wert, Verfall) {
-    var jetzt = new Date();
-    var Auszeit = new Date(jetzt.getTime() + Verfall);
-    document.cookie = Bezeichner + "=" + Wert + ";expires=" + Auszeit.toGMTString() +
-        ";";
-}
-
-function zaehlerstand() {
-    var Verfallszeit = 1000 * 60 * 60 * 24 * 365;
-    var Anzahl = wertHolen();
-    var Zaehler = 0;
-    if (Anzahl != "") {
-        Zaehler = parseInt(Anzahl) || 0;
-    }
-    Zaehler = Zaehler + 1;
-    wertSetzen("Zaehler", Zaehler, Verfallszeit);
-    return (Zaehler);
-}
 window.addEventListener('DOMContentLoaded', init);
 var elem = document.getElementById("browser");
 elem.addEventListener('onclick', browserCheck);
@@ -79,3 +42,38 @@ function resetForm(id) {
     document.getElementById(id).reset();
 }
 
+//Cockies
+function setCookie(name, val, exd){
+    if(getCookie(name) >= 1){
+        let value = getCookie(name) + 1;
+        alert(value);
+        let d = new Date();
+        d.setTime(d.getTime() + (exd*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        document.getElementById("info").innerHTML = value;
+
+    }else{
+        let d = new Date();
+        d.setTime(d.getTime() + (exd*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = name + "=" + val + ";" + expires + ";path=/";
+        document.getElementById("info").innerHTML = val;
+    }
+    
+}
+
+function getCookie(cnm) {
+    let dat = document.cookie.split(";");
+    let val = dat[1].split("=")[1];
+    return parseInt(val);
+}
+
+function checkCookie(cnm) {
+    var user=getCookie(cnm);
+    if (user != "") {
+      return 1;
+    } else {
+         return 0;
+    }
+  }
