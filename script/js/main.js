@@ -3,6 +3,8 @@ function agreeCookies() {
     alert("Come to the darkside we have cookies!");
 }
 
+<<
+<< << < HEAD
 //Cookiezähler
 function init() {
     var besuch = zaehlerstand();
@@ -35,19 +37,10 @@ function wertSetzen(Bezeichner, Wert, Verfall) {
     var Auszeit = new Date(jetzt.getTime() + Verfall);
     document.cookie = Bezeichner + "=" + Wert + "; expires=" + Auszeit.toGMTString() +
         ";";
-}
+} ===
+=== = >>>
+>>> > 8e8821 a2925049d03117a872b191c40123e38758
 
-function zaehlerstand() {
-    var Verfallszeit = 1000 * 60 * 60 * 24 * 365;
-    var Anzahl = wertHolen();
-    var Zaehler = 0;
-    if (Anzahl != "") {
-        Zaehler = parseInt(Anzahl) || 0;
-    }
-    Zaehler = Zaehler + 1;
-    wertSetzen("Zaehler", Zaehler, Verfallszeit);
-    return (Zaehler);
-}
 window.addEventListener('DOMContentLoaded', init);
 var elem = document.getElementById("browser");
 elem.addEventListener('onclick', browserCheck);
