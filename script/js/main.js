@@ -42,7 +42,7 @@ function resetForm(id) {
     document.getElementById(id).reset();
 }
 
-//Cockies
+//Cookies
 function setCookie(name, val, exd){
     if(getCookie(name) >= 1){
         let value = getCookie(name) + 1;
