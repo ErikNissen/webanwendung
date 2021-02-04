@@ -46,7 +46,6 @@ function resetForm(id) {
 function setCookie(name, val, exd){
     if(getCookie(name) >= 1){
         let value = getCookie(name) + 1;
-        alert(value);
         let d = new Date();
         d.setTime(d.getTime() + (exd*24*60*60*1000));
         let expires = "expires="+ d.toUTCString();
