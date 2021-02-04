@@ -4,7 +4,8 @@ function agreeCookies() {
 }
 
 <<
-<< << < HEAD
+<<
+<< < HEAD
 //Cookiezähler
 function init() {
     var besuch = zaehlerstand();
@@ -38,8 +39,10 @@ function wertSetzen(Bezeichner, Wert, Verfall) {
     document.cookie = Bezeichner + "=" + Wert + "; expires=" + Auszeit.toGMTString() +
         ";";
 } ===
-=== = >>>
->>> > 8e8821 a2925049d03117a872b191c40123e38758
+===
+= >>>
+>>>
+> 8e8821 a2925049d03117a872b191c40123e38758
 
 window.addEventListener('DOMContentLoaded', init);
 var elem = document.getElementById("browser");
