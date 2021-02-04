@@ -34,10 +34,10 @@
     <script type="text/javascript" src="script/js/main.js"></script>
 </head>
 
-<body onload="agreeCookies()">
-    <div id="cookies"></div>
+<body onload="agreeCookies(), setCookie('besucherzahl', 1, 1)">
+    <h3 id="cookies"></h3>
     <h2>Eine Seite, die etwas über Sie weiß...</h2>
-    <p>Dies ist Ihr <span id="info"></span>. Besuch auf dieser Seite!</p>
+    <p>Dies ist Ihr <span id="info">1</span>. Besuch auf dieser Seite!</p>
     <!--Navigationsbar-->
     <section class="grid-container">
         <nav class="nav">
