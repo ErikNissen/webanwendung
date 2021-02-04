@@ -108,4 +108,43 @@ function loadDoc() {
 //Formular leeren
 function resetForm(id) {
     document.getElementById(id).reset();
+<<<<<<< HEAD
 }
+=======
+}
+
+//Cookies
+function setCookie(name, val, exd){
+    if(getCookie(name) >= 1){
+        let value = getCookie(name) + 1;
+        let d = new Date();
+        d.setTime(d.getTime() + (exd*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        document.getElementById("info").innerHTML = value;
+
+    }else{
+        let d = new Date();
+        d.setTime(d.getTime() + (exd*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = name + "=" + val + ";" + expires + ";path=/";
+        document.getElementById("info").innerHTML = val;
+    }
+    
+}
+
+function getCookie(cnm) {
+    let dat = document.cookie.split(";");
+    let val = dat[1].split("=")[1];
+    return parseInt(val);
+}
+
+function checkCookie(cnm) {
+    var user=getCookie(cnm);
+    if (user != "") {
+      return 1;
+    } else {
+         return 0;
+    }
+  }
+>>>>>>> 73ec8bfab128b964edd917f6ffc86ce10dcf555d
